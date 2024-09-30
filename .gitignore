@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Django
+*.log
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+/static/
+/media/
+
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs and editors
+.vscode/
+.idea/
+.DS_Store
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Others
+.coverage
+.pytest_cache/
+.mypy_cache/
