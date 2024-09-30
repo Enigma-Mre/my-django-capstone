@@ -3,15 +3,36 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MySite documentation
-====================
-
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+Welcome to Your Django Project's Documentation!
+=================================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   installation
+   usage
+   api
+   contributing
+   faq
+   polls
+   blog
+   user_auth
+
+Getting Started
+---------------
+
+This documentation covers three main applications within this Django project: a Polls app, a Blog app,
+and a User Authentication app.
+Each app is designed to handle specific functionalities as described below.
+
+Installation
+------------
+
+To install this Django project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Enigma-Mre/my-django-capstone.git
+   cd MySite
 
