@@ -9,15 +9,15 @@ import os
 import sys
 import django
 
-# Add your Django project to the Python path
-sys.path.insert(0, os.path.abspath('../your_django_project'))  # Adjust path as necessary
-os.environ['DJANGO_SETTINGS_MODULE'] = 'your_django_project.settings'  # Update with your settings module
+# Add the parent directory to the module search path
+sys.path.insert(0, os.path.abspath('..'))
+os.environ['DJANGO_SETTINGS_MODULE'] = 'MySite.settings'
 django.setup()
 
 # Project information
-project = 'Your Django Project Name'
-author = 'Your Name'
-release = '0.1'  # Version of your project
+project = 'MySite'
+author = 'Calvin Hatttingh'
+release = '0.1'
 
 # General configuration
 extensions = [
@@ -33,7 +33,7 @@ templates_path = ['_templates']
 html_static_path = ['_static']
 
 # Options for HTML output
-html_theme = 'alabaster'  # Change the theme as desired
+html_theme = 'alabaster'
 html_theme_options = {
     'sidebar_collapse': True,
     'page_width': 'auto',
