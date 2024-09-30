@@ -3,18 +3,27 @@
 # Index
 
 1. [Overview](#overview)
-2. [Prerequisites](#prerequisites)
-3. [Setup Instructions](#setup-instructions)
+2. [Installation](#installation)
+3. [Prerequisites](#prerequisites)
+4. [Setup Instructions](#setup-instructions)
    - [Using `.venv`](#using-venv)
    - [Using Docker](#using-docker)
-4. [Important Notes](#important-notes)
-5. [Installation](#installation)
+5. [Important Notes](#important-notes)
 
 ## Overview
 
 This is a Django project that allows users to [briefly describe the functionality of your application].
 This README outlines the steps to build and run the application both using a virtual environment (`.venv`) and Docker.
 
+## Installation
+
+Follow these steps to install the project dependencies:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Enigma-Mre/my-django-capstone.git
+   cd my-django-capstone
+   
 ## Prerequisites
 
 - Python 3.10 or later
@@ -68,12 +77,3 @@ This README outlines the steps to build and run the application both using a vir
 
     Secrets Management: Do not commit sensitive information such as passwords or access tokens to public repositories. Always use environment variables or a .env file to manage secrets.
     Database Configuration: Ensure that you have your database configured and accessible before running the application. Update your .env file with the appropriate credentials.
-
-## Installation
-
-Follow these steps to install the project dependencies:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Enigma-Mre/my-django-capstone.git
-   cd my-django-capstone
