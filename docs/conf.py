@@ -9,33 +9,32 @@ import os
 import sys
 import django
 
-# Add the parent directory to the Python path
+# Add the parent directory to the module search path
 sys.path.insert(0, os.path.abspath('..'))
-
-# Set the Django settings module
 os.environ['DJANGO_SETTINGS_MODULE'] = 'MySite.settings'
-
-# Initialize Django
 django.setup()
 
-
+# Project information
 project = 'MySite'
-copyright = '2024, Calvin Hattingh'
-author = 'Calvin Hattingh'
-release = '1.0.0'
+author = 'Calvin Hatttingh'
+release = '0.1'
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+# General configuration
+extensions = [
+    'sphinx.ext.autodoc',            # Automatic documentation generation from docstrings
+    'sphinx.ext.napoleon',           # Support for Google and NumPy style docstrings
+    'sphinx.ext.viewcode',           # Add links to the source code
+    'sphinx.ext.autosummary',        # Generate summary tables
+    'sphinx_autodoc_typehints',      # Add type hints to autodoc
+]
 
-extensions = []
-
+# Paths for templates and static files
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
-
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
-html_theme = 'alabaster'
 html_static_path = ['_static']
+
+# Options for HTML output
+html_theme = 'alabaster'
+html_theme_options = {
+    'sidebar_collapse': True,
+    'page_width': 'auto',
+}
